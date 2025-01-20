@@ -1,0 +1,568 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Libre Baskerville", serif;
+    scroll-behavior: smooth;
+}
+#all{
+    display: none;
+}
+.loader{
+    display: grid;
+    align-items: center;
+    place-content: center;
+    min-height: 100vh;
+}
+.loader img{
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    animation-name: b;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes b {
+    from{rotate: 0}
+    to{rotate: 360deg}
+}
+.background{
+    background: linear-gradient(rgba(80, 78, 87, 0.2), rgba(84, 86, 78, 0.5)),
+    url(https://media.istockphoto.com/id/2012746933/photo/cyber-security-black-man-and-code-reflection-in-eyewear-hacking-and-software-update-in-office.webp?a=1&b=1&s=612x612&w=0&k=20&c=bJxHjbTcJUx_GqkhBpHfUJuuQ0raaN3dJo1KIP4oaRE=) no-repeat center center/cover;
+    padding: 200px 75px;
+}
+#ig:hover, #tg:hover, #fb:hover, #mg:hover, #li:hover, #x:hover, #wa:hover{
+    cursor: pointer;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: #3b3838;
+    padding: 20px;
+}
+.others{
+    display: block;
+}
+.others a{
+    text-decoration: none;
+    color: #fff;
+}
+.others a :hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: orangered;
+    background-color: #c3e4d0;
+    border-radius: 15px;
+}
+.name{
+    color: blue;
+    font-size: 1.5rem;
+}
+.name:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: purple;
+}
+.q{
+    display: none;
+}
+.others span{
+    margin: 10px;
+    padding: 15px;
+}
+.others span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: orangered;
+    background-color: #c3e4d0;
+    border-radius: 15px;
+}
+#sponsor_button{
+    background: #277446;
+    border-radius: 35px;
+    color: #000;
+    text-decoration: none;
+    animation-name: c;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes c {
+    from{
+        border-radius: auto;
+        /* transform: scale(0); */
+    }
+    to{
+        border-radius: 10px;
+        /* transform: scale(1.0);
+        transition: 0.5s ease-in-out; */
+    }
+}
+.picture{
+    display: flex;
+    align-items: center;
+    background: burlywood;
+    flex-direction: column;
+    margin: 10px 500px;
+    padding: 40px;
+}
+.pic img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    animation-name: a;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes a {
+    from{width: 100px}
+    to{width: 150px}
+}
+.text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.i img{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 5px;
+}
+.middle{
+    background: #000;
+    color: #fff;
+    padding: 30px;
+}
+.middle p{
+    color: #005300;
+    font-size: 1.5rem;
+    margin: 0 30px;
+    text-decoration: none;
+}
+.i{
+    display: flex;
+    justify-content: center;
+    text-decoration: double underline #68ee6393; 
+}
+.about{
+    margin: 40px 0;
+    font-size: 1.5rem;
+}
+/* .github{
+    color: green;
+    font-size: 2rem;
+} */
+.under{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    margin-top: 30px;
+}
+.personal{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.personal span{
+    display: flex;
+    flex-direction: row;
+}
+.button{
+    background: green;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+.my{
+    font-size: 2rem; 
+}
+.my i{
+    color: #000;
+    margin: 10px;
+    padding: 10px;
+    background: rgb(140, 216, 216);
+}
+.down{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    margin-top: 60px;
+}
+.down a{
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    }
+ .n:hover{
+    text-decoration: underline green double;
+    background: #2600ff00;
+}
+.bottom{
+    background: #c6bff1;
+    color: #fff;
+    padding: 60px 10px;
+}
+.bottom h2{
+    display: flex;
+    justify-content: center;
+    text-decoration: double underline #68ee6393; 
+}
+.tech > div, .prof > div{
+    margin: 20px;
+}
+.tp{
+    display: flex;
+    justify-content: space-between;
+}
+.java{
+    background: #000;
+    width: 350px;
+    height: 15px;
+    margin: 10px;
+}
+.script{
+    background: #248124;
+    position: relative;
+    width: 80%;
+    height: 15px;
+}
+.js{
+    position: relative;
+    bottom: 25px;
+    left: 260px;
+  width: 40px;
+    height: 40px;
+    border-radius: 50%;  
+    background: #228322;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.html{
+    background: #000;
+    width: 350px;
+    height: 15px;
+    margin: 10px;
+}
+.ht{
+    background: #248124;
+    position: relative;
+    width: 95%;
+    height: 15px;
+}
+.ml{
+    position: relative;
+    bottom: 25px;
+    left: 310px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #228322;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.css{
+    background: #000;
+    width: 350px;
+    height: 15px;
+    margin: 10px;
+}
+.cs{
+    background: #248124;
+    position: relative;
+    width: 90%;
+    height: 15px;
+}
+.ss{
+    position: relative;
+    bottom: 25px;
+    left: 290px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #228322;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.comm{
+    background: #000;
+    width: 350px;
+    height: 15px;
+    margin: 10px;
+}
+.cation{
+    background: #248124;
+    position: relative;
+    width: 82%;
+    height: 15px;
+}
+.cc{
+    position: relative;
+    bottom: 25px;
+    left: 270px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #228322;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.team{
+    background: #000;
+    width: 350px;
+    height: 15px;
+    margin: 10px;
+}
+.work{
+    background: #248124;
+    position: relative;
+    width: 97%;
+    height: 15px;
+}
+.tw{
+    position: relative;
+    bottom: 20px;
+    left: 320px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #228322;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.creat{
+    background: #000;
+    width: 350px;
+    height: 15px;
+    margin: 10px;
+}
+.tivity{
+    background: #248124;
+    position: relative;
+    width: 90%;
+    height: 15px;
+}
+.ct{
+    position: relative;
+    bottom: 25px;
+    left: 300px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #228322;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.js, .hc, .cc, .tw, .ct{
+    padding: 15px;
+}
+.portfolio{
+    background: #aa9a9a;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 15px 0;
+}
+.portfolio img{
+    width: 400px;
+    border: solid green 5px;
+    border-radius: 10px;
+}
+.portfolio img:hover{
+    cursor: pointer;
+    transition: 5s ease-in-out;
+    transform: rotate(-20deg);
+}
+.portfolio p{
+    color: darkcyan;
+    text-decoration: none;
+    font-size: 40px;
+}
+.portfolioo{
+    background: #aa9a9a;
+    display: block;
+    padding: 15px 0;
+}
+.portfolioo img{
+    width: 100%;
+    border: solid green 5px;
+    border-radius: 10px;
+}
+.portfolioo img:hover{
+    cursor: pointer;
+    transition: 5s ease-in-out;
+    transform: rotate(-20deg);
+}
+.portfolioo p{
+    color: darkcyan;
+    text-decoration: none;
+    font-size: 40px;
+}
+.portfolioo, .portfolioa{
+    display: none;
+}
+#contact{
+    background: #000;
+}
+.contact{
+    display: flex;
+    justify-content: space-between;
+}
+.ii{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+.ii i{
+    color: darkcyan;
+}
+.ii a{
+    text-decoration: none;
+    color: #fff;
+}
+.ci{
+    margin: 10px 0;
+}
+.ci i{
+    margin: 0 10px;
+    color: #fff;
+}
+.cb{
+    margin: 10px o;
+}
+.cf{
+    display: flex;
+    flex-direction: column;
+
+}
+input{
+    margin: 10px 0;
+    background: rgb(77, 78, 78);
+    color: green;
+}
+::placeholder{
+    color: #fff;
+}
+textarea{
+    margin: 10px 0;
+    background: rgb(77, 78, 78);
+}
+p{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: double underline green;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.personal button{
+    background: green;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    color: #fff;
+}
+#google_translate_element{
+    padding: 50px;
+}
+.sponsor{
+    display: none;
+    position: absolute;
+    left: 500px;
+    top: 90px;
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+}
+.sponsor button{
+    margin: 20px 40px;
+    padding: 20px;
+    border-radius: 15px;
+    background: green;
+}
+.sponsor button:hover{
+    cursor: pointer;
+}
+
+
+/* for media querry on mobile */
+@media screen and (min-width:0) and (max-width:750px) {
+    .others{
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: #000;
+        border-radius: 30px;
+        margin: 10px;
+        transition: 3s ease-in-out;
+        animation-name: others;
+        animation-duration: 2s;
+    }
+    @keyframes others {
+        from{width: 10px}
+        to{right: auto}
+    }
+    .others span{
+        display: block;
+        text-align: center;
+    }
+    .portfolioo, .portfolioa{
+        display: block;
+    }
+    .portfolio, .portfolia{
+        display: none;
+    }
+    .q{
+        display: block;
+    }
+    #bars{
+        color: #fff;
+    }
+    #mark{
+        display: none;
+    }
+    .tp{
+        display: block;
+    }
+    .contact{
+        display: block;
+    }
+    .picture{
+        margin: 10px 50px;
+    }
+    .portfolio{
+        grid-template-columns: auto;
+    }
+    .sponsor{
+        left: 120px;
+        bottom: 200px;
+        padding: 100px 15px;
+    }
+}
+/* for media querry on ipad */
+@media screen and (min-width:751px) and (max-width:1024px) {
+    .picture{
+        margin: 10px 100px;
+    }
+    .portfolio{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
