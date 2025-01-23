@@ -431,6 +431,8 @@
 .ii a{
     text-decoration: none;
     color: #fff;
+    font-size: 1.5rem;
+    margin: 10px 0;
 }
 .ci{
     margin: 10px 0;
@@ -442,10 +444,22 @@
 .cb{
     margin: 10px o;
 }
+.cb button{
+    background: green;
+    border-radius: 15px;
+    padding: 15px 30px;
+    margin: 10px;
+}
 .cf{
     display: flex;
     flex-direction: column;
-
+    margin: 2px 40px;
+}
+.cf button{
+    background: green;
+    border-radius: 15px;
+    padding: 15px 30px;
+    margin: 10px;
 }
 input{
     margin: 10px 0;
