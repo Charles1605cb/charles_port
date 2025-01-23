@@ -115,7 +115,7 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    animation-name: a;
+    /* animation-name: a; */
     animation-duration: 10s;
     animation-delay: 1s;
     animation-iteration-count: infinite;
@@ -182,12 +182,15 @@
 }
 .my{
     font-size: 2rem; 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 .my i{
     color: #000;
     margin: 10px;
     padding: 10px;
     background: rgb(140, 216, 216);
+    height: 70px;
 }
 .down{
     display: flex;
@@ -371,7 +374,7 @@
 .portfolio{
     background: #aa9a9a;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 15px;
     padding: 15px 0;
 }
@@ -385,10 +388,13 @@
     transition: 5s ease-in-out;
     transform: rotate(-20deg);
 }
-.portfolio p{
+.portfolio a{
     color: darkcyan;
     text-decoration: none;
     font-size: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 .portfolioo{
     background: #aa9a9a;
@@ -405,7 +411,7 @@
     transition: 5s ease-in-out;
     transform: rotate(-20deg);
 }
-.portfolioo p{
+.portfolioo a{
     color: darkcyan;
     text-decoration: none;
     font-size: 40px;
@@ -415,6 +421,9 @@
 }
 #contact{
     background: #000;
+}
+.advice:hover, .age:hover, .music:hover, .time:hover{
+    cursor: pointer;
 }
 .contact{
     display: flex;
@@ -527,6 +536,9 @@ a{
 
 /* for media querry on mobile */
 @media screen and (min-width:0) and (max-width:750px) {
+    /* #all{
+        width: 100%;
+    } */
     .others{
         display: none;
         width: 100%;
@@ -548,6 +560,12 @@ a{
     .others span{
         display: block;
         text-align: center;
+    }
+    .under{
+        width: 85%;
+    }
+    .my i{
+        display: block;
     }
     .portfolioo, .portfolioa{
         display: block;
@@ -573,8 +591,10 @@ a{
     .picture{
         margin: 10px 50px;
     }
-    .portfolio{
-        grid-template-columns: auto;
+    .portfolioo img:hover{
+        cursor: pointer;
+        transition: 5s ease-in-out;
+        transform: rotate(0);
     }
     .sponsor{
         left: 120px;
