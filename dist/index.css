@@ -369,7 +369,7 @@
     align-items: center;
 }
 .js, .hc, .cc, .tw, .ct{
-    padding: 15px;
+    padding: 15px 0;
 }
 .portfolio{
     background: #aa9a9a;
@@ -583,6 +583,12 @@ a{
         display: none;
     }
     .tp{
+        display: block;
+    }
+    .java, .html, .css, .comm, .team, .creat{
+        width: 75%;
+    }
+    .my i{
         display: block;
     }
     .contact{
