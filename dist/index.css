@@ -512,7 +512,18 @@ a{
 .sponsor button:hover{
     cursor: pointer;
 }
-
+#google_translate_element{
+    padding: 0;
+    padding-top: 30px;
+}
+.goog-te-combo{
+    position: absolute;
+    right: 25px;
+    top: 75px;
+}
+.VIpgJd-ZVi9od-l4eHX-hSRGPd{
+    display: none;
+}
 
 /* for media querry on mobile */
 @media screen and (min-width:0) and (max-width:750px) {
